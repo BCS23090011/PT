@@ -41,7 +41,7 @@
                     <toolkit:Expander.Header>
                         <VerticalStackLayout>
                             <Label Text="Jeon Jung-kook (Korean: 전정국), born September 1, 1997..." LineBreakMode="TailTruncation" MaxLines="2" TextColor="Black"/>
-                            <Label Text="Read More" TextColor="Red" FontSize="12" Margin="0,5,0,0" HorizontalOptions="Center"/>
+                            <Label Text="Read More" TextColor="#401588" FontSize="12" Margin="0,5,0,0" HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </toolkit:Expander.Header>
                     <toolkit:Expander.Content>
@@ -95,7 +95,7 @@
         <Grid Grid.Row="1" 
               BackgroundColor="White"
               ColumnDefinitions="*, *, *" 
-              RowDefinitions="*, *, *" 
+              RowDefinitions="0.6*,1.4*,0.8*" 
               Padding="0" RowSpacing="2" ColumnSpacing="2">
 
             <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="image1.jpeg" />

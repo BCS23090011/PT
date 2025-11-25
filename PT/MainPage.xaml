@@ -9,7 +9,8 @@
         <VerticalStackLayout Grid.Row="0" Spacing="15" Padding="15" BackgroundColor="#e6cfe6">
 
             <Grid ColumnDefinitions="Auto, *, *, *" RowDefinitions="Auto, Auto" ColumnSpacing="10">
-                <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HeightRequest="80" WidthRequest="80" Stroke="#A020F0" StrokeThickness="3">
+                <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HeightRequest="80" WidthRequest="80" 
+                        Stroke="#A020F0" StrokeThickness="3">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="40"/>
                     </Border.StrokeShape>
@@ -40,7 +41,8 @@
                 <toolkit:Expander>
                     <toolkit:Expander.Header>
                         <VerticalStackLayout>
-                            <Label Text="Jeon Jung-kook (Korean: 전정국), born September 1, 1997..." LineBreakMode="TailTruncation" MaxLines="2" TextColor="Black"/>
+                            <Label Text="Jeon Jung-kook (Korean: 전정국), born September 1, 1997..." 
+                                   LineBreakMode="TailTruncation" MaxLines="2" TextColor="Black"/>
                             <Label Text="Read More" TextColor="#401588" FontSize="12" Margin="0,5,0,0" HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </toolkit:Expander.Header>

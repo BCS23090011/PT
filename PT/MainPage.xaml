@@ -37,6 +37,8 @@
                 <Label Text="🔗 Free Jungkook Golden Jewellery" TextColor="#A020F0" FontSize="12" />
             </VerticalStackLayout>
 
+            <BoxView HeightRequest="1" Color="LightGray" BackgroundColor="white" />
+
             <Border Stroke="LightGray" StrokeThickness="0" Padding="2" BackgroundColor="#e6cfe6">
                 <toolkit:Expander>
                     <toolkit:Expander.Header>
@@ -51,6 +53,8 @@
                     </toolkit:Expander.Content>
                 </toolkit:Expander>
             </Border>
+
+            <BoxView HeightRequest="1" Color="LightGray" BackgroundColor="white" />
 
             <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="5">
                 <VerticalStackLayout Grid.Column="0" Spacing="5">

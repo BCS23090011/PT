@@ -3,70 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PT.MainPage"
-             BackgroundColor="white">
+             BackgroundColor="White">
+    <Grid RowDefinitions="Auto, *">
 
-    <ScrollView>
-        <VerticalStackLayout Spacing="15" Padding="2" BackgroundColor="#e6cfe6">
+        <VerticalStackLayout Grid.Row="0" Spacing="15" Padding="15" BackgroundColor="#e6cfe6">
 
-            <Grid ColumnDefinitions="Auto, *, *, *" RowDefinitions="Auto, Auto" ColumnSpacing="10" BackgroundColor="#e6cfe6">
-
-                <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
-                        HeightRequest="80" WidthRequest="80"
-                        Stroke="#A020F0" StrokeThickness="3">
+            <Grid ColumnDefinitions="Auto, *, *, *" RowDefinitions="Auto, Auto" ColumnSpacing="10">
+                <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" HeightRequest="80" WidthRequest="80" Stroke="#A020F0" StrokeThickness="3">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="40"/>
                     </Border.StrokeShape>
                     <Image Source="owner1.png" Aspect="AspectFill" />
                 </Border>
-
                 <VerticalStackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="9" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                     <Label Text="Posts" FontSize="12" HorizontalOptions="Center" TextColor="Gray"/>
                 </VerticalStackLayout>
-
                 <VerticalStackLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="588M" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                     <Label Text="Followers" FontSize="12" HorizontalOptions="Center" TextColor="Gray"/>
                 </VerticalStackLayout>
-
                 <VerticalStackLayout Grid.Row="0" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="$22.6B" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
                     <Label Text="Net Worth" FontSize="12" HorizontalOptions="Center" TextColor="Gray"/>
                 </VerticalStackLayout>
-
             </Grid>
 
-            <VerticalStackLayout Spacing="2" BackgroundColor="#e6cfe6">
+            <VerticalStackLayout Spacing="2">
                 <Label Text="Jungkook Jeon" FontAttributes="Bold" TextColor="Black" />
                 <Label Text="Members of BTS" TextColor="Gray" FontSize="12" />
                 <Label Text="Account managed by @bighit_ent" TextColor="Gray" FontSize="12" />
                 <Label Text="🔗 Free Jungkook Golden Jewellery" TextColor="#A020F0" FontSize="12" />
             </VerticalStackLayout>
 
-
             <Border Stroke="LightGray" StrokeThickness="0" Padding="2" BackgroundColor="#e6cfe6">
                 <toolkit:Expander>
                     <toolkit:Expander.Header>
                         <VerticalStackLayout>
-                            <Label Text="Jeon Jung-kook (Korean: 전정국), born September 1, 1997, known mononymously as Jungkook, is a South Korean singer..." 
-                                   LineBreakMode="TailTruncation" 
-                                   MaxLines="2"
-                                   TextColor="Black"/>
+                            <Label Text="Jeon Jung-kook (Korean: 전정국), born September 1, 1997..." LineBreakMode="TailTruncation" MaxLines="2" TextColor="Black"/>
                             <Label Text="Read More" TextColor="Red" FontSize="12" Margin="0,5,0,0" HorizontalOptions="Center"/>
                         </VerticalStackLayout>
                     </toolkit:Expander.Header>
-
                     <toolkit:Expander.Content>
-                        <Label Text="He is the youngest member and vocalist of the South Korean boy band BTS. Jungkook has released three solo tracks as part of BTS discography: 'Begin' in 2016, 'Euphoria' in 2018, and 'My Time' in 2020, all of which have charted on South Korea's Gaon Digital Chart." 
-                               TextColor="DarkGray" 
-                               FontSize="12"
-                               Margin="0,10,0,0"/>
+                        <Label Text="He is the youngest member..." TextColor="DarkGray" FontSize="12" Margin="0,10,0,0"/>
                     </toolkit:Expander.Content>
                 </toolkit:Expander>
             </Border>
 
-            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="5" Margin="0,10" BackgroundColor="#e6cfe6">
-
+            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="5">
                 <VerticalStackLayout Grid.Column="0" Spacing="5">
                     <Border HeightRequest="60" WidthRequest="60" StrokeThickness="0" BackgroundColor="LightBlue">
                         <Border.StrokeShape>
@@ -76,7 +60,6 @@
                     </Border>
                     <Label Text="Single#1" FontSize="11" HorizontalOptions="Center" TextColor="Black"/>
                 </VerticalStackLayout>
-
                 <VerticalStackLayout Grid.Column="1" Spacing="5">
                     <Border HeightRequest="60" WidthRequest="60" StrokeThickness="0" BackgroundColor="White" Stroke="LightGray">
                         <Border.StrokeShape>
@@ -86,7 +69,6 @@
                     </Border>
                     <Label Text="Single#2" FontSize="11" HorizontalOptions="Center" TextColor="Black"/>
                 </VerticalStackLayout>
-
                 <VerticalStackLayout Grid.Column="2" Spacing="5">
                     <Border HeightRequest="60" WidthRequest="60" StrokeThickness="0" BackgroundColor="Black">
                         <Border.StrokeShape>
@@ -96,7 +78,6 @@
                     </Border>
                     <Label Text="Single#3" FontSize="11" HorizontalOptions="Center" TextColor="Black"/>
                 </VerticalStackLayout>
-
                 <VerticalStackLayout Grid.Column="3" Spacing="5">
                     <Border HeightRequest="60" WidthRequest="60" StrokeThickness="0" BackgroundColor="#D22B2B">
                         <Border.StrokeShape>
@@ -108,22 +89,27 @@
                 </VerticalStackLayout>
             </Grid>
 
-            <BoxView HeightRequest="1" Color="White"/>
-
-            <Grid ColumnDefinitions="*, *, *" RowDefinitions="120, 120, 120" RowSpacing="2" ColumnSpacing="2" BackgroundColor="white">
-                <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="image1.jpeg" />
-                <Image Grid.Row="0" Grid.Column="1" Aspect="AspectFill" Source="image2.jpeg" />
-                <Image Grid.Row="0" Grid.Column="2" Aspect="AspectFill" Source="image3.jpeg" />
-
-                <Image Grid.Row="1" Grid.Column="0" Aspect="AspectFill" Source="image4.jpeg" />
-                <Image Grid.Row="1" Grid.Column="1" Aspect="AspectFill" Source="image5.jpeg" />
-                <Image Grid.Row="1" Grid.Column="2" Aspect="AspectFill" Source="image6.jpeg" />
-
-                <Image Grid.Row="2" Grid.Column="0" Aspect="AspectFill" Source="image7.jpeg"/>
-                <Image Grid.Row="2" Grid.Column="1" Aspect="AspectFill" Source="image8.jpeg" />
-                <Image Grid.Row="2" Grid.Column="2" Aspect="AspectFill" Source="image9.jpeg" />
-            </Grid>
-
         </VerticalStackLayout>
-    </ScrollView>
+
+
+        <Grid Grid.Row="1" 
+              BackgroundColor="White"
+              ColumnDefinitions="*, *, *" 
+              RowDefinitions="*, *, *" 
+              Padding="0" RowSpacing="2" ColumnSpacing="2">
+
+            <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="image1.jpeg" />
+            <Image Grid.Row="0" Grid.Column="1" Aspect="AspectFill" Source="image2.jpeg" />
+            <Image Grid.Row="0" Grid.Column="2" Aspect="AspectFill" Source="image3.jpeg" />
+
+            <Image Grid.Row="1" Grid.Column="0" Aspect="AspectFill" Source="image4.jpeg" />
+            <Image Grid.Row="1" Grid.Column="1" Aspect="AspectFill" Source="image5.jpeg" />
+            <Image Grid.Row="1" Grid.Column="2" Aspect="AspectFill" Source="image6.jpeg" />
+
+            <Image Grid.Row="2" Grid.Column="0" Aspect="AspectFill" Source="image7.jpeg"/>
+            <Image Grid.Row="2" Grid.Column="1" Aspect="AspectFill" Source="image8.jpeg" />
+            <Image Grid.Row="2" Grid.Column="2" Aspect="AspectFill" Source="image9.jpeg" />
+        </Grid>
+
+    </Grid>
 </ContentPage>
